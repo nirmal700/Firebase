@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         pButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mRef.child("8345").addListenerForSingleValueEvent(new ValueEventListener() {
+                mRef.child("1223").addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull  DataSnapshot snapshot) {
                         Map<String,Object> data = (Map<String, Object>)snapshot.getValue();

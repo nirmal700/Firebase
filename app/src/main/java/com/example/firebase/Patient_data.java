@@ -36,6 +36,7 @@ public class Patient_data extends AppCompatActivity {
         mBgroup=findViewById(R.id.bgid);
         mBtype=findViewById(R.id.btid);
         mGender=findViewById((R.id.genderid));
+        mSave=findViewById(R.id.saveid);
         mSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
