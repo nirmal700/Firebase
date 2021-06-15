@@ -1,104 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
     tools:context=".Patient_data">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_height="668dp"
         android:layout_margin="20dp"
+        android:orientation="vertical"
         tools:context=".AppointActivity">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp">
-            <TextView
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_width="150dp"
-                android:layout_height="match_parent"
-                android:text="Patient Id"/>
-            <EditText
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="8dp"
-                android:layout_width="200dp"
-                android:layout_height="match_parent"
-                android:id="@+id/patientid"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp">
-            <TextView
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_width="150dp"
-                android:layout_height="match_parent"
-                android:text="Email :"/>
-            <EditText
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="8dp"
-                android:layout_width="200dp"
-                android:layout_height="match_parent"
-                android:id="@+id/emailid"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_marginTop="5dp"
-            android:layout_height="50dp">
-            <TextView
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_width="150dp"
-                android:layout_height="match_parent"
-                android:text="Patient Name :"/>
-            <EditText
 
-                android:layout_marginLeft="8dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Patient Id"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/patientid"
                 android:layout_width="200dp"
                 android:layout_height="match_parent"
-                android:id="@+id/patientname"/>
+                android:layout_marginLeft="8dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="5dp">
+
             <TextView
-                android:textSize="20dp"
-                android:textStyle="bold"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:text="Blood Group :"/>
+                android:text="Email :"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/emailid"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Patient Name :"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/patientname"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Blood Group :"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
             <RadioGroup
-                android:orientation="horizontal"
+                android:id="@+id/bgid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/bgid">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A"/>
-                <RadioButton
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="B"/>
+                android:orientation="horizontal">
 
                 <RadioButton
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/bga"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="AB"/>
+                    android:text="A" />
+
                 <RadioButton
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/bgb"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="O"/>
+                    android:layout_marginLeft="5dp"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/bgab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="AB" />
+
+                <RadioButton
+                    android:id="@+id/bgo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="O" />
             </RadioGroup>
             <!--        <EditText-->
             <!--            android:textSize="20dp"-->
@@ -108,30 +129,35 @@
             <!--            android:layout_height="match_parent"-->
             <!--            android:id="@+id/bgid"/>-->
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="5dp">
+
             <TextView
-                android:textSize="20dp"
-                android:textStyle="bold"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:text="Blood Type :"/>
+                android:text="Blood Type :"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
             <RadioGroup
-                android:orientation="horizontal"
+                android:id="@+id/btid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/btid">
+                android:orientation="horizontal">
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Positive"/>
+                    android:text="Positive" />
+
                 <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Negetive"/>
+                    android:text="Negetive" />
             </RadioGroup>
             <!--        <EditText-->
             <!--            android:textSize="20dp"-->
@@ -146,26 +172,30 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="5dp">
+
             <TextView
-                android:textSize="20dp"
-                android:textStyle="bold"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:text="Gender :"/>
+                android:text="Gender :"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
             <RadioGroup
-                android:orientation="horizontal"
+                android:id="@+id/genderid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/genderid">
+                android:orientation="horizontal">
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Male"/>
+                    android:text="Male" />
+
                 <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Female"/>
+                    android:text="Female" />
             </RadioGroup>
             <!--        <TextView-->
             <!--            android:textSize="20dp"-->
@@ -186,58 +216,65 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="5dp">
+
             <TextView
-                android:textSize="20dp"
-                android:textStyle="bold"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:text="Contact Number :"/>
-            <EditText
+                android:text="Contact Number :"
                 android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="8dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/contactid"
                 android:layout_width="200dp"
                 android:layout_height="match_parent"
-                android:id="@+id/contactid"/>
+                android:layout_marginLeft="8dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="5dp">
+
             <Button
-                android:textStyle="bold"
+                android:id="@+id/dobbutton"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:text="Date of birth :"
-                android:id="@+id/dobbutton"/>
+                android:textStyle="bold" />
+
             <EditText
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="8dp"
+                android:id="@+id/dobid"
                 android:layout_width="200dp"
                 android:layout_height="match_parent"
-                android:id="@+id/dobid"/>
+                android:layout_marginLeft="8dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="5dp">
+
             <TextView
-                android:textSize="20dp"
-                android:textStyle="bold"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:text="National ID Number :"/>
-            <EditText
+                android:text="National ID Number :"
                 android:textSize="20dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="8dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nid"
                 android:layout_width="200dp"
                 android:layout_height="match_parent"
-                android:id="@+id/nid"/>
+                android:layout_marginLeft="8dp"
+                android:textSize="20dp"
+                android:textStyle="bold" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -269,4 +306,4 @@
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
